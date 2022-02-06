@@ -28,6 +28,8 @@ start:
 
 	mov byte [0x10],'.'
 	mov byte [0x11],0x04
+	
+	jmp 0x0000:0x7c00
 current:
 	times 510-(current-start) db 0
 	db 0x55,0xaa
